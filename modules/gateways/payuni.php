@@ -51,7 +51,7 @@ function payuni_config()
 
 function payuni_link($params)
 {
-	require __DIR__ . '/payuni/payuni.php';
+	require_once __DIR__ . '/payuni/payuni.php';
 	$service = new \Mod\Gateway\Payuni\PayUni(
 		$params['MerID'],
 		$params['hashKey'],
